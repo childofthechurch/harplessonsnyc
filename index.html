@@ -197,11 +197,11 @@
  
             <div class="col-sm d-flex justify-content-center">
             
-              <div style="text-align: center; padding: 30px; border: 5px solid #737360; margin: 0 auto; background-color: white; box-sizing: border-box; width: 95%; max-width: 700px;">
-                <!-- Consistently scaled two-line title -->
-                <div style="font-family: 'Georgia', serif; font-weight: bold; color: #737360; margin: 0; padding: 0; box-sizing: border-box;">
-                  <div style="font-size: 4.5vw; line-height: 1; margin: 0; padding: 0; white-space: nowrap;">Harp Lessons</div>
-                  <div style="font-size: 4.5vw; line-height: 1; margin: 0; padding: 0; white-space: nowrap;">by Esther Sibiude</div>
+              <div style="padding: 30px; border: 5px solid #737360; margin: 0 auto; background-color: white; box-sizing: border-box; width: 95%; max-width: 700px; display: flex; justify-content: center; align-items: center;">
+                <!-- Flexbox centered title -->
+                <div style="font-family: 'Georgia', serif; font-weight: bold; color: #737360; display: flex; flex-direction: column; align-items: center; justify-content: center; width: 100%;">
+                  <div style="font-size: 4.5vw; line-height: 1; margin-bottom: 15px; white-space: nowrap; text-align: center;">Harp Lessons</div>
+                  <div style="font-size: 4.5vw; line-height: 1; white-space: nowrap; text-align: center;">by Esther Sibiude</div>
                 </div>
               </div>
               
@@ -304,23 +304,47 @@
           </div>
 
     <div class="lessonsblurb">
-      "Spirit and Soul Become Confused" at Roulette, Brooklyn, February 2024<br>
-    <img src="images/About photos/Esther_Sibiude_Harp_Roulette_Brooklyn.jpg" alt="Esther Sibiude performing Harp at Roulette in Brooklyn." width="75%" style="display: block; margin: 0 auto;"> 
-    
-    <br><br>
-    "The Song of Dirt Stammers Our Tongue" at The Kitchen, New York City, June 2023<br>
-    <img src="images/About photos/TheKitchen_NYC_Esther_Sibiude_Harp_Ensemble.jpg" alt="Esther Sibiude playing Harp with Ensemble at The Kitchen NYC" width="75%" style="display: block; margin: 0 auto;">
-      <br><br><img src="images/About photos/TheKitchen_NYC_Esther_Sibiude_Harp.jpg" alt="Esther Sibiude playing Harp with Ensemble at The Kitchen NYC" width="75%" style="display: block; margin: 0 auto;"> 
-      <br>
-      <br>
-      "Esra" at the Queens Museum, Queens, November 2021
-      <br><img src="images/About photos/Queens_Museum_Esra_Esther_Sibiude.jpg" alt="Esther Sibiude playing Harp with Ensemble at The Queens Museum NYC Esra" width="75%" style="display: block; margin: 0 auto;"> 
+      <div class="performance-item">
+        <p>"Spirit and Soul Become Confused" at Roulette, Brooklyn, February 2024</p>
+        <img src="images/About photos/Esther_Sibiude_Harp_Roulette_Brooklyn.jpg" alt="Esther Sibiude performing Harp at Roulette in Brooklyn." width="75%">
+      </div>
       
-      <br><br>
-      "My Heart Swims in Blood" at Lafayette Presbyterian Church, Brooklyn, 2019
-      <br><img src="images/About photos/Esther_Harp_Church.JPG" alt="Esther Sibiude performing harp at Layfayette Presbyterian Church with COTC" width="75%" style="display: block; margin: 0 auto;"> 
-     
+      <div class="performance-item">
+        <p>"The Song of Dirt Stammers Our Tongue" at The Kitchen, New York City, June 2023</p>
+        <img src="images/About photos/TheKitchen_NYC_Esther_Sibiude_Harp_Ensemble.jpg" alt="Esther Sibiude playing Harp with Ensemble at The Kitchen NYC" width="75%">
+      </div>
+      
+      <div class="performance-item">
+        <img src="images/About photos/TheKitchen_NYC_Esther_Sibiude_Harp.jpg" alt="Esther Sibiude playing Harp with Ensemble at The Kitchen NYC" width="75%">
+      </div>
+      
+      <div class="performance-item">
+        <p>"Esra" at the Queens Museum, Queens, November 2021</p>
+        <img src="images/About photos/Queens_Museum_Esra_Esther_Sibiude.jpg" alt="Esther Sibiude playing Harp with Ensemble at The Queens Museum NYC Esra" width="75%">
+      </div>
+      
+      <div class="performance-item">
+        <p>"My Heart Swims in Blood" at Lafayette Presbyterian Church, Brooklyn, 2019</p>
+        <img src="images/About photos/Esther_Harp_Church.JPG" alt="Esther Sibiude performing harp at Layfayette Presbyterian Church with COTC" width="75%">
+      </div>
     </div>
+    
+    <style>
+      .performance-item {
+        margin: 30px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; /* Left align everything */
+      }
+      .performance-item p {
+        margin: 0 0 10px 12.5%; /* Left-align with the left edge of the image (which is 25% smaller) */
+        font-weight: 500;
+      }
+      .performance-item img {
+        display: block;
+        margin: 0 auto;
+      }
+    </style>
  
   
   </div>
@@ -374,56 +398,53 @@
   
     </div>
     <div class="container">
-      <div id="CONTACT" class="lessons">
-        <h1>
-          Contact
-        </h1>
-        <div class="row">
+      <div id="CONTACT" style="margin-top: 40px;">
+        <div class="row align-items-center">
           <div class="col-lg-7">
             <div class="contact-info">
-              <h3>Ready to begin your harp journey?</h3>
-              <p>Give me a call or drop me a line! I'd love to hear from you and learn a bit about you.</p>
-              <p>When you reach out, please include:</p>
-              <div class="row">
-                <div class="col-6">
-                  <ul>
-                    <li>Your age (or your child's age)</li>
-                    <li>Whether you have a harp at home</li>
-                  </ul>
+              <h1>Contact</h1>
+              <div style="margin-left: 20px; margin-top: 20px;">
+                <h3>Ready to begin your harp journey?</h3>
+                <p>Give me a call or drop me a line! I'd love to hear from you and learn a bit about you.</p>
+                <p>When you reach out, please include:</p>
+                <div class="row">
+                  <div class="col-6">
+                    <ul>
+                      <li>Your age (or your child's age)</li>
+                      <li>Whether you have a harp at home</li>
+                    </ul>
+                  </div>
+                  <div class="col-6">
+                    <ul>
+                      <li>If you're new to the harp</li>
+                      <li>Any past musical experience</li>
+                    </ul>
+                  </div>
                 </div>
-                <div class="col-6">
-                  <ul>
-                    <li>If you're new to the harp</li>
-                    <li>Any past musical experience</li>
-                  </ul>
-                </div>
-              </div>
-              <p>I am looking forward to meeting you!</p>
-              
-              <div class="contact-methods">
-                <div class="contact-method">
-                  <i class="bi bi-envelope-fill"></i>
-                  <a href="mailto:harplessonsbyesther@gmail.com?subject=Interested in Harp Lessons&body=Hi Esther,%0A%0AI'm interested in harp lessons. Here's a bit about me:%0A%0A- Age: %0A- Do I have a harp at home: %0A- New to the harp?: %0A- Past musical experience: %0A%0AI'm looking forward to hearing from you!%0A%0ABest regards," class="contact-button">
-                    Email me at harplessonsbyesther@gmail.com
-                  </a>
-                </div>
+                <p>I am looking forward to meeting you!</p>
                 
-                <div class="contact-method">
-                  <i class="bi bi-telephone-fill"></i>
-                  <a href="tel:9174638958" class="contact-button">
-                    Call me at 917-463-8958
-                  </a>
+                <div class="contact-methods">
+                  <div class="contact-method">
+                    <i class="bi bi-envelope-fill"></i>
+                    <a href="mailto:harplessonsbyesther@gmail.com?subject=Interested in Harp Lessons&body=Hi Esther,%0A%0AI'm interested in harp lessons. Here's a bit about me:%0A%0A- Age: %0A- Do I have a harp at home: %0A- New to the harp?: %0A- Past musical experience: %0A%0AI'm looking forward to hearing from you!%0A%0ABest regards," class="contact-button">
+                      Email me at harplessonsbyesther@gmail.com
+                    </a>
+                  </div>
+                  
+                  <div class="contact-method">
+                    <i class="bi bi-telephone-fill"></i>
+                    <a href="tel:9174638958" class="contact-button">
+                      Call me at 917-463-8958
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
           
           <div class="col-lg-5">
-            <div class="contact-image-container" style="margin-top: 0; position: relative; top: -20px;">
-              <img src="images/Landing page/Harp_Lessons_NYC_by_Esther_Sibiude.jpg" alt="Esther teaching harp" class="contact-image">
-              <div class="contact-image-caption">
-                <p>Register for a trial lesson!</p>
-              </div>
+            <div class="contact-image-container" style="margin-top: 20px;">
+              <img src="images/Landing page/harp_hands.png" alt="Close-up of hands playing the harp" class="contact-image">
             </div>
           </div>
         </div>
