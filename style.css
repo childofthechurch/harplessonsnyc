@@ -1,0 +1,251 @@
+/* @font-face {
+  font-family: 'TIMES__';
+  src: url('webfontkit-20230806-135721/timess__-webfont.woff2') format('woff2'),
+         url('webfontkit-20230806-135721/timess__-webfont.woff') format('woff');
+} */
+
+body
+{   
+  background-color: #ffffff;
+  height: 100%;
+  margin: 0;
+  font-family: Georgia, serif;
+  color: #585c53;
+  font-size: 12pt;  
+  overflow-x: hidden;
+}
+
+.navbar{
+  z-index:100;
+  border-bottom: 2px solid #6b7066;
+  font-family: Georgia, serif;
+  font-size: 12pt;
+  color: #585c53;
+  
+}
+.nav-link {
+  
+  font-family: Georgia, serif;
+  font-size: 12pt;
+  color: #585c53;
+}
+
+
+.title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index:99;
+  text-align: center;
+  padding-top: 100px;
+  font-size: 36pt; 
+  
+}
+.footer {
+
+  text-align: center;
+  padding: 20px;
+  font-size: 10pt; 
+  
+}
+.harpLanding {
+
+
+  padding: 15px;
+  text-align: center;
+
+}
+
+.title-container {
+  display: inline-block;
+  text-align: center;
+  padding: 20px 60px;
+  border: 5px solid #737360;
+  margin: 0 auto;
+  background-color: white;
+  max-width: 90%;
+}
+
+.title-text {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 700;
+  color: #737360;
+  line-height: 1.2;
+  font-size: 72px; /* Maximum size for wide screens */
+  margin: 0;
+}
+
+/* Responsive font sizes */
+@media (max-width: 1200px) {
+  .title-text {
+    font-size: 64px;
+  }
+}
+
+@media (max-width: 992px) {
+  .title-text {
+    font-size: 56px;
+  }
+}
+
+@media (max-width: 768px) {
+  .title-text {
+    font-size: 48px;
+  }
+  .title-container {
+    padding: 15px 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  .title-text {
+    font-size: 36px;
+  }
+  .title-container {
+    padding: 10px 30px;
+  }
+}
+
+@media (max-width: 400px) {
+  .title-text {
+    font-size: 28px;
+  }
+  .title-container {
+    padding: 10px 20px;
+  }
+}
+
+h1 {
+
+  font-size: 14pt;
+  font-weight: bold;
+  
+}
+
+h2 {
+  font-size: 14pt;
+  
+  
+}
+h3 {
+  font-size: 12pt;
+  font-weight: bold;
+
+  
+}
+
+h4 {
+  font-size: 12pt;
+  text-align: center;
+  
+}
+
+h5 {
+  font-size: 12pt;
+  
+}
+
+h6 {
+  font-size: 15pt;
+  
+}
+
+
+/* mouse over link */
+a:link {
+  color: #585c53;
+}
+a:hover {
+color: #85927c;
+}
+
+/* selected link */
+a:active {
+  color: #585c53;
+}
+
+
+.lessons {
+
+  background-color: none;
+
+  padding-top: 70px;
+  
+}
+.lessonsblurb {
+
+  background-color: none;
+
+  padding:20px;
+  
+}
+.faqblurb {
+
+  background-color: none;
+
+  padding:20px;
+  
+}
+
+
+.ticker-tape-container {
+  overflow-x: hidden;
+  width: 100%;
+  display: flex;
+}
+
+.ticker-tape {
+  --direction: normal;
+  --duration: 30s;
+  --delay: 0s;
+  --iteration-count: infinite;
+  display: flex;
+  gap: 1rem;
+  flex: 0 0 auto;
+  margin-right: 1rem;
+  min-width: 100%;
+  align-items: center;
+  animation: marquee var(--duration) linear var(--delay) var(--iteration-count);
+  animation-play-state: var(--play);
+  animation-delay: var(--delay);
+  animation-direction: var(--direction);
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* This is just some styling to make it look presentable */
+
+.basic-styling {
+  border-radius: 10px;
+  background-color: none;
+  padding: none;
+  color: #c20000;
+  font-size: 2vw;
+
+}
+
+
+
+@media screen and (max-width: 600px) {
+
+  .body {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+    max-width: 100%;
+    
+  }
+
+}
+
+
+/*# ourceMappingURL=style.css.map */
