@@ -9,7 +9,19 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Thank you for your interest in harp lessons with Esther Sibiude. Your request has been received and we'll be in touch soon!">
-  <meta name="robots" content="noindex, follow">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Google tag (gtag.js) for conversion tracking -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+    
+    // Conversion tracking - replace with your actual conversion ID and label
+    gtag('event', 'conversion', {'send_to': 'AW-XXXXXXXXXX/XXXXXXXXXXX'});
+  </script>
   
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
@@ -142,11 +154,28 @@
     </div>
   </div>
   
-  <!-- Simple tracking script -->
+  <!-- Enhanced conversion tracking -->
   <script>
     document.addEventListener('DOMContentLoaded', function() {
-      // This page is designed to be visited manually after someone has sent an email
-      // You can share this link directly with people who have contacted you
+      // Track page load as conversion event
+      if (typeof gtag === 'function') {
+        // You can customize this with additional parameters if needed
+        gtag('event', 'lesson_request_completed', {
+          'event_category': 'conversion',
+          'event_label': 'Lesson Request'
+        });
+      }
+      
+      // Get URL parameters (if Google Ads is passing any)
+      const urlParams = new URLSearchParams(window.location.search);
+      const gclid = urlParams.get('gclid');
+      
+      // If there's a GCLID, store it in a cookie for future attribution
+      if (gclid) {
+        const expiryDate = new Date();
+        expiryDate.setDate(expiryDate.getDate() + 30); // Store for 30 days
+        document.cookie = `gclid=${gclid}; expires=${expiryDate.toUTCString()}; path=/`;
+      }
     });
   </script>
 </body>
