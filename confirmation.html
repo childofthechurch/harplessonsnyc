@@ -18,7 +18,7 @@
   <!-- Bootstrap CSS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
   <link href="style.min.css" rel="stylesheet">
-  <title>Request Received | Harp Lessons by Esther Sibiude</title>
+  <title>Thank You | Harp Lessons by Esther Sibiude</title>
   
   <style>
     .confirmation-container {
@@ -142,20 +142,11 @@
     </div>
   </div>
   
-  <!-- Confirmation page tracking script -->
+  <!-- Simple tracking script -->
   <script>
     document.addEventListener('DOMContentLoaded', function() {
-      // You could add conversion tracking code here if needed
-      // This is where you would put Google Analytics or other tracking code
-      
-      // Example of showing dynamic content based on URL parameters
-      const urlParams = new URLSearchParams(window.location.search);
-      const name = urlParams.get('name');
-      
-      if (name) {
-        const heading = document.querySelector('.confirmation-heading');
-        heading.textContent = `Thank you, ${name}! Your Lesson Request Has Been Received!`;
-      }
+      // This page is designed to be visited manually after someone has sent an email
+      // You can share this link directly with people who have contacted you
     });
   </script>
 </body>
