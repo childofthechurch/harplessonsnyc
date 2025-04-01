@@ -1,9 +1,42 @@
 // Handle hash-based navigation
 document.addEventListener('DOMContentLoaded', function() {
+  // Function to find element regardless of case
+  function findElementByCaseInsensitiveId(id) {
+    // Try direct match first
+    let element = document.getElementById(id);
+    
+    // If not found, try case insensitive match
+    if (!element) {
+      // Check for known section IDs with specific capitalization
+      const knownIds = {
+        'contact': 'CONTACT',
+        'about': 'ABOUT',
+        'faq': 'FAQ',
+        'lessons': 'LESSONS'
+      };
+      
+      // Try to match with known capitalization
+      const lowerId = id.toLowerCase();
+      if (knownIds[lowerId]) {
+        element = document.getElementById(knownIds[lowerId]);
+      }
+      
+      // If still not found, try to find by attribute selector (slower but more thorough)
+      if (!element) {
+        element = document.querySelector(`[id="${id}"], [id="${id.toUpperCase()}"], [id="${id.toLowerCase()}"]`);
+      }
+    }
+    
+    return element;
+  }
+  
   // Function to scroll to an element with offset for the navbar
   function scrollToElement(elementId) {
-    const element = document.getElementById(elementId);
-    if (!element) return;
+    const element = findElementByCaseInsensitiveId(elementId);
+    if (!element) {
+      console.log('Element not found:', elementId);
+      return;
+    }
     
     const navbar = document.querySelector('.navbar');
     const navbarHeight = navbar ? navbar.offsetHeight : 0;
@@ -26,7 +59,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Add a slight delay to ensure the page is fully loaded
     setTimeout(() => {
       scrollToElement(targetId);
-    }, 100);
+    }, 300); // Increased delay for more reliability
   }
   
   // Also handle clicks on hash links within the page
@@ -53,4 +86,10 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
   });
+  
+  // Debug information to console
+  console.log('Hash navigation script loaded');
+  if (window.location.hash) {
+    console.log('Initial hash:', window.location.hash);
+  }
 });
