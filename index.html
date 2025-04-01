@@ -529,54 +529,8 @@
 <!-- Load SEO enhancement script -->
 <script src="seo-enhancement.js"></script>
 
-<!-- Scroll offset fix for mobile -->
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  // Get all navigation links that point to anchors
-  const navLinks = document.querySelectorAll('.navbar-nav a[href^="#"]');
-  
-  // Add click event listener to each link
-  navLinks.forEach(link => {
-    link.addEventListener('click', function(e) {
-      e.preventDefault(); // Prevent default anchor behavior
-      
-      // Get the target element
-      const targetId = this.getAttribute('href');
-      if (!targetId || targetId === '#') return; // Skip if no valid target
-      
-      const targetElement = document.querySelector(targetId);
-      if (!targetElement) return; // Skip if target doesn't exist
-      
-      // Get the navbar element to calculate its height
-      const navbar = document.querySelector('.navbar');
-      
-      // Calculate extra offset for mobile
-      let extraOffset = 0;
-      if (window.innerWidth < 992) {
-        // Add extra offset when in mobile mode with dropdown
-        extraOffset = 10; // Reduced by 60px as requested
-        
-        // Also close the dropdown menu if it's open
-        const navbarCollapse = document.querySelector('.navbar-collapse');
-        if (navbarCollapse && navbarCollapse.classList.contains('show')) {
-          const bsCollapse = new bootstrap.Collapse(navbarCollapse);
-          bsCollapse.hide();
-        }
-      }
-      
-      // Calculate position
-      const elementPosition = targetElement.getBoundingClientRect().top;
-      const offsetPosition = elementPosition + window.pageYOffset - navbar.offsetHeight - extraOffset;
-      
-      // Scroll to the position
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: 'smooth'
-      });
-    });
-  });
-});
-</script>
+<!-- Load hash navigation script -->
+<script src="hash-navigation.js"></script>
 
 </body>
 </html>
