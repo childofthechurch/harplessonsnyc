@@ -175,8 +175,6 @@
 
   <nav class="navbar navbar-expand-lg sticky-top" style="background-color: #ffffff;">
     <div class="container-fluid">
-      <!--<img src="images/9149375.png" width="40"> -->
-      
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -200,13 +198,52 @@
  
             <div class="col-sm d-flex justify-content-center">
             
-              <div style="padding: 30px; border: 2.5px solid #737360; margin: 0 auto; background-color: white; box-sizing: border-box; width: 95%; max-width: 700px; display: flex; justify-content: center; align-items: center;">
-                <!-- Flexbox centered title -->
-                <div style="font-family: 'Georgia', serif; color: #737360; display: flex; flex-direction: column; align-items: center; justify-content: center; width: 100%;">
-                  <div style="font-size: 4.5vw; line-height: 1; margin-bottom: 15px; white-space: nowrap; text-align: center; font-weight: normal;">Harp Lessons</div>
-                  <div style="font-size: 4.5vw; line-height: 1; white-space: nowrap; text-align: center; font-weight: normal;">by Esther Sibiude</div>
-                </div>
+              <div class="logo-container">
+                <img src="images/Landing page/logo.png" alt="Harp Lessons by Esther Sibiude" class="header-logo">
               </div>
+              
+              <!-- CSS for responsive logo size -->
+              <style>
+                /* Logo container */
+                .logo-container {
+                  padding: 30px;
+                  margin: 0 auto;
+                  background-color: white;
+                  box-sizing: border-box;
+                  width: 95%;
+                  max-width: 700px;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  overflow: visible; /* Allow logo to overflow for scaling */
+                }
+                
+                /* Standard size for desktop */
+                .header-logo {
+                  width: 100%;
+                  max-width: 500px;
+                  height: auto;
+                  transition: transform 0.2s ease; /* Smooth transition for scaling */
+                }
+                
+                /* Make logo bigger on smaller screens */
+                @media (max-width: 576px) {
+                  .header-logo {
+                    transform: scale(1.25); /* Make the logo 25% bigger */
+                  }
+                  
+                  .logo-container {
+                    padding: 20px; /* Reduce padding on mobile */
+                  }
+                }
+                
+                /* Even bigger for iPhone and very small screens */
+                @media (max-width: 375px) {
+                  .header-logo {
+                    transform: scale(1.4); /* Make the logo 40% bigger */
+                  }
+                }
+              </style>
               
             </div>
             <div class="col-sm"> 
