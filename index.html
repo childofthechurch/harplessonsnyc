@@ -3,6 +3,13 @@
 
   
   <head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GT-T9CD235D');</script>
+<!-- End Google Tag Manager -->
 <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/harp6464.png">
 <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/harp6464.png">
 <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/harp6464.png">
@@ -172,6 +179,10 @@
   </script>
 </head>
 <body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GT-T9CD235D"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 
   <nav class="navbar navbar-expand-lg sticky-top" style="background-color: #ffffff;">
     <div class="container-fluid">
@@ -179,7 +190,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       
-      <a href="mailto:harplessonsbyesther@gmail.com?subject=Interested%20in%20Harp%20Lessons&body=Hi!%0A%0AI'm%20interested%20in%20harp%20lessons!%0A%0A*%20Your%20age%20(or%20your%20child's%20age)%0A*%20Whether%20you%20have%20a%20harp%20at%20home%0A*%20If%20you're%20new%20to%20the%20harp%0A*%20Any%20past%20musical%20experience%0A*%20Phone%20Number" class="d-lg-none book-lesson-btn ms-auto btn btn-outline-secondary">Book Lesson!</a>
+      <a href="#CONTACT" class="d-lg-none book-lesson-btn ms-auto btn btn-outline-secondary">Book Lesson!</a>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <div class="navbar-nav">
           <a class="nav-item nav-link" href="#">Home </a>
@@ -286,7 +297,7 @@
 
       <p>When the student is a young child it is recommended for a parent or care taker to assist during the lesson in order to support their practice and homework during the week.</p>
       <p>For beginners I guide the student’s family into finding the right instrument to rent or buy. </p>
-     <p><a href="mailto:harplessonsbyesther@gmail.com?subject=Interested%20in%20Harp%20Lessons&body=Hi!%0A%0AI'm%20interested%20in%20harp%20lessons!%0A%0A*%20Your%20age%20(or%20your%20child's%20age)%0A*%20Whether%20you%20have%20a%20harp%20at%20home%0A*%20If%20you're%20new%20to%20the%20harp%0A*%20Any%20past%20musical%20experience%0A*%20Phone%20Number">Register for a trial lesson!</a></p>
+     <p><a href="#CONTACT">Register for a trial lesson!</a></p>
       
       <p> 30 minutes lessons for younger students are $70 </b>
       <p> 60 minutes lesson are $100 </p>
@@ -445,23 +456,64 @@
               <h1>Contact</h1>
               <div style="margin-left: 20px; margin-top: 20px;">
                 <h3>Ready to begin your harp journey?</h3>
-                <p>Give me a call or drop me a line! I'd love to hear from you and learn a bit about you.</p>
-                <p>When you reach out, please include:</p>
-                <div class="row">
-                  <div class="col-6">
-                    <ul>
-                      <li>Your age (or your child's age)</li>
-                      <li>Whether you have a harp at home</li>
-                    </ul>
+                <p>Fill out the form below or give me a call! I'd love to hear from you and learn a bit about you.</p>
+                
+                <!-- Contact Form -->
+                <form id="lesson-request-form" action="https://formspree.io/f/xrbpolrw" method="POST" class="contact-form" onsubmit="gtag('event', 'conversion', {'send_to': 'AW-16923342394/ZBRgCOeh6KkaELrs1oU_'});">
+                  <div class="form-group mb-3">
+                    <label for="name">Full Name</label>
+                    <input type="text" class="form-control" id="name" name="name" required>
                   </div>
-                  <div class="col-6">
-                    <ul>
-                      <li>If you're new to the harp</li>
-                      <li>Any past musical experience</li>
-                    </ul>
+                  
+                  <div class="form-group mb-3">
+                    <label for="email">Email Address</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
                   </div>
+                  
+                  <div class="form-group mb-3">
+                    <label for="phone">Phone Number (optional)</label>
+                    <input type="tel" class="form-control" id="phone" name="phone">
+                  </div>
+                  
+                  <div class="form-group mb-3">
+                    <label for="age">Your Age (or your child's age)</label>
+                    <input type="text" class="form-control" id="age" name="age">
+                  </div>
+                  
+                  <div class="form-group mb-3">
+                    <label for="harp_experience">Do you have any harp experience?</label>
+                    <select class="form-control" id="harp_experience" name="harp_experience">
+                      <option value="No experience">No, I'm a complete beginner</option>
+                      <option value="Some experience">I have some experience</option>
+                      <option value="Experienced">I'm experienced</option>
+                    </select>
+                  </div>
+                  
+                  <div class="form-group mb-3">
+                    <label for="has_harp">Do you have a harp at home?</label>
+                    <select class="form-control" id="has_harp" name="has_harp">
+                      <option value="No">No</option>
+                      <option value="Yes">Yes</option>
+                    </select>
+                  </div>
+                  
+                  <div class="form-group mb-3">
+                    <label for="message">Additional Information</label>
+                    <textarea class="form-control" id="message" name="message" rows="4" placeholder="Tell me about your musical background, interests, or any questions you have..."></textarea>
+                  </div>
+                  
+                  <!-- Hidden fields -->
+                  <input type="hidden" id="gclid_field" name="gclid" value="">
+                  <input type="hidden" name="_subject" value="New Harp Lesson Request">
+                  
+                  <button type="submit" class="btn btn-primary submit-btn">Request Lesson Information</button>
+                </form>
+                
+                <div class="or-divider">
+                  <hr><span>OR</span><hr>
                 </div>
-                <p>I am looking forward to meeting you!</p>
+                
+                <p>Contact me directly:</p>
                 
                 <div class="contact-methods">
                   <div class="contact-method">
@@ -551,7 +603,90 @@
           font-size: 1.1rem;
           font-style: italic;
         }
+        /* Contact Form Styles */
+        .contact-form {
+          margin: 20px 0;
+          background-color: #f9f9f9;
+          padding: 25px;
+          border-radius: 8px;
+          border-left: 4px solid #737360;
+        }
+        .form-group label {
+          font-weight: 500;
+          margin-bottom: 5px;
+          color: #585c53;
+        }
+        .form-control {
+          border: 1px solid #ddd;
+          padding: 10px 15px;
+          border-radius: 4px;
+          color: #585c53;
+        }
+        .form-control:focus {
+          border-color: #737360;
+          box-shadow: 0 0 0 0.2rem rgba(115, 115, 96, 0.25);
+        }
+        .submit-btn {
+          background-color: #737360;
+          border: none;
+          padding: 10px 20px;
+          font-weight: 500;
+          width: 100%;
+          margin-top: 10px;
+        }
+        .submit-btn:hover {
+          background-color: #85927c;
+        }
+        .or-divider {
+          display: flex;
+          align-items: center;
+          margin: 30px 0;
+          color: #737360;
+        }
+        .or-divider hr {
+          flex-grow: 1;
+          border-top: 1px solid #ddd;
+          margin: 0 15px;
+        }
+        .or-divider span {
+          font-weight: 500;
+          color: #737360;
+        }
       </style>
+      
+      <!-- Google Ads GCLID Tracking Script -->
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          // Function to get URL parameters
+          function getParameterByName(name) {
+            name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+            var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+                results = regex.exec(location.search);
+            return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+          }
+          
+          // Get GCLID and store it in the form
+          var gclid = getParameterByName('gclid');
+          if (gclid) {
+            document.getElementById('gclid_field').value = gclid;
+            
+            // Also store in a cookie for future use (lasts 30 days)
+            var expiryDate = new Date();
+            expiryDate.setDate(expiryDate.getDate() + 30);
+            document.cookie = `gclid=${gclid}; expires=${expiryDate.toUTCString()}; path=/`;
+          } else {
+            // Try to get from cookie if not in URL
+            var cookies = document.cookie.split(';');
+            for (var i = 0; i < cookies.length; i++) {
+              var cookie = cookies[i].trim();
+              if (cookie.indexOf('gclid=') === 0) {
+                document.getElementById('gclid_field').value = cookie.substring('gclid='.length, cookie.length);
+                break;
+              }
+            }
+          }
+        });
+      </script>
   </div>
 </div>
 <div class="container">
@@ -562,6 +697,15 @@
   </div>
 </div>
 </main>
+
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6WNLK7FNS8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-6WNLK7FNS8');
+</script>
 
 <!-- Load SEO enhancement script -->
 <script src="seo-enhancement.js"></script>
