@@ -529,7 +529,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           </div>
           
           <div class="col-lg-5">
-            <div class="contact-image-container" style="margin-top: -85px !important; margin-bottom: 0 !important; position: relative; top: -35px;">
+            <div class="contact-image-container">
               <img src="images/Landing page/harp_hands.png" alt="Close-up of hands playing the harp" class="contact-image">
             </div>
           </div>
@@ -582,6 +582,27 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           width: 100%;
           display: block;
         }
+        
+        /* Desktop positioning */
+        @media (min-width: 992px) {
+          .contact-image-container {
+            margin-top: -85px;
+            margin-bottom: 0;
+            position: relative;
+            top: -35px;
+          }
+        }
+        
+        /* Mobile positioning - prevent overlap with contact info */
+        @media (max-width: 991px) {
+          .contact-image-container {
+            margin-top: 50px; /* Increased top margin */
+            position: static;
+          }
+          .contact-methods {
+            margin-bottom: 60px; /* Add extra space below contact methods on mobile */
+          }
+        }
         .contact-image-caption {
           background-color: rgba(115, 115, 96, 0.8);
           color: white;
@@ -604,6 +625,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           padding: 25px;
           border-radius: 8px;
           border-left: 4px solid #737360;
+        }
+        
+        /* Ensure contact methods are visible and not overlapped on mobile */
+        @media (max-width: 991px) {
+          .contact-methods {
+            margin-bottom: 40px; /* Add extra space below contact methods on mobile */
+          }
         }
         .form-group label {
           font-weight: 500;
