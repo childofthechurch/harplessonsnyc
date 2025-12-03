@@ -15,7 +15,7 @@ const ANALYTICS_CONFIG = {
   META_PIXEL_ID: '770878310335430',
 
   // Microsoft Clarity
-  CLARITY_PROJECT_ID: 'ov9nsp1i4h', // This will be generated when you set up Clarity
+  CLARITY_PROJECT_ID: 'ufs8qcupsf'
 
   // Google Tag Manager
   GTM_ID: 'GT-T9CD235D'
