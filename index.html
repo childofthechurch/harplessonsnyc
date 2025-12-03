@@ -305,10 +305,159 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <main>
   <div class="container">
-    
+
+  <!-- Hero Section -->
+  <style>
+    .hero-section h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #585c53;
+      margin-bottom: 20px;
+      line-height: 1.3;
+    }
+
+    @media (max-width: 768px) {
+      .hero-section h1 {
+        font-size: 1.8rem;
+      }
+      .hero-section .hero-subheadline {
+        font-size: 1.1rem;
+      }
+      .hero-section {
+        padding: 40px 20px !important;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .hero-section h1 {
+        font-size: 1.5rem;
+      }
+      .cta-buttons {
+        flex-direction: column !important;
+      }
+      .cta-buttons a {
+        width: 100%;
+      }
+    }
+  </style>
+
+  <div class="hero-section" style="padding: 60px 0; text-align: center;">
+    <h1>
+      Harp Lessons in NYC & Brooklyn &mdash; Beginners Welcome
+    </h1>
+
+    <p class="hero-subheadline" style="font-size: 1.25rem; color: #737360; margin-bottom: 40px; max-width: 700px; margin-left: auto; margin-right: auto;">
+      Learn the harp in a warm, encouraging environment.<br>
+      Private lessons for adults, teens, and children &mdash;<br>
+      no experience or harp required to begin.
+    </p>
+
+    <!-- Trust Bullets -->
+    <div class="trust-bullets" style="max-width: 800px; margin: 0 auto 40px;">
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <div style="display: flex; align-items: center; text-align: left;">
+            <span style="color: #737360; font-size: 1.5rem; margin-right: 15px; line-height: 1;">&#10003;</span>
+            <p style="margin: 0; color: #585c53; font-size: 1.05rem;">Friendly, professional instruction from<br>Esther Sibiude, classically and jazz trained harpist</p>
+          </div>
+        </div>
+        <div class="col-md-6 mb-3" style="padding-left: 30px;">
+          <div style="display: flex; align-items: center; text-align: left;">
+            <span style="color: #737360; font-size: 1.5rem; margin-right: 15px; line-height: 1;">&#10003;</span>
+            <p style="margin: 0; color: #585c53; font-size: 1.05rem;">Lessons in Park Slope, Brooklyn, at your home, or remotely</p>
+          </div>
+        </div>
+        <div class="col-md-6 mb-3">
+          <div style="display: flex; align-items: center; text-align: left;">
+            <span style="color: #737360; font-size: 1.5rem; margin-right: 15px; line-height: 1;">&#10003;</span>
+            <p style="margin: 0; color: #585c53; font-size: 1.05rem;">Ages 3+ and all experience levels welcome</p>
+          </div>
+        </div>
+        <div class="col-md-6 mb-3" style="padding-left: 30px;">
+          <div style="display: flex; align-items: center; text-align: left;">
+            <span style="color: #737360; font-size: 1.5rem; margin-right: 15px; line-height: 1;">&#10003;</span>
+            <p style="margin: 0; color: #585c53; font-size: 1.05rem;">English, French, and German spoken</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA Buttons -->
+    <style>
+      .hero-cta-btn {
+        background-color: transparent;
+        border: 2px solid #737360;
+        color: #737360;
+        padding: 15px 35px;
+        font-size: 1.1rem;
+        font-weight: 600;
+        border-radius: 5px;
+        transition: all 0.3s ease;
+        text-decoration: none;
+        display: inline-block;
+      }
+
+      .hero-cta-btn:hover {
+        background-color: #737360;
+        color: white;
+        text-decoration: none;
+      }
+    </style>
+
+    <div class="cta-buttons" style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+      <a href="#CONTACT" class="hero-cta-btn">
+        Start with a Trial Lesson
+      </a>
+      <a href="#CONTACT" class="hero-cta-btn">
+        Ask a Question
+      </a>
+    </div>
+  </div>
+  <!-- End Hero Section -->
+
+  <!-- Who I Teach Section -->
+  <div id="WHO-I-TEACH" class="lessons" style="padding-top: 40px;">
+    <h1 style="font-size: 1.8rem; font-weight: 600;">
+      Who I Teach
+    </h1>
+
+    <div class="row" style="margin-top: 30px;">
+      <!-- Adults -->
+      <div class="col-md-4 mb-4">
+        <div style="padding: 30px; border: 1px solid #ddd; border-radius: 8px; height: 100%; background-color: #f9f9f9;">
+          <h3 style="font-size: 1.3rem; font-weight: 600; color: #585c53; margin-bottom: 15px;">Adults</h3>
+          <p style="color: #737360; font-size: 1rem; line-height: 1.6;">
+            Beginner-friendly lessons for adults returning to music or starting for the first time. Structured but relaxed, with guidance tailored to your personal goals: technique, repertoire, or simply discovering a new hobby or form of expression.
+          </p>
+        </div>
+      </div>
+
+      <!-- Children -->
+      <div class="col-md-4 mb-4">
+        <div style="padding: 30px; border: 1px solid #ddd; border-radius: 8px; height: 100%; background-color: #f9f9f9;">
+          <h3 style="font-size: 1.3rem; font-weight: 600; color: #585c53; margin-bottom: 15px;">Children</h3>
+          <p style="color: #737360; font-size: 1rem; line-height: 1.6;">
+            Engaging lessons that blend music, coordination, creative expression, and parent-supported practice. Perfect for young beginners starting their musical journey.
+          </p>
+        </div>
+      </div>
+
+      <!-- Experienced Musicians -->
+      <div class="col-md-4 mb-4">
+        <div style="padding: 30px; border: 1px solid #ddd; border-radius: 8px; height: 100%; background-color: #f9f9f9;">
+          <h3 style="font-size: 1.3rem; font-weight: 600; color: #585c53; margin-bottom: 15px;">Experienced Musicians</h3>
+          <p style="color: #737360; font-size: 1rem; line-height: 1.6;">
+            For students with prior harp, piano, violin, or other musical experience looking to refine technique or explore new genres or improvisation styles.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Who I Teach Section -->
+
   <div id="LESSONS" class="lessons">
     <h1 style="font-size: 1.8rem; font-weight: 600;">
-      Harp Lessons in NYC
+      Lessons
     </h1>
     <div class="lessonsblurb">
       <p>Private harp lessons are open to students of all ages and experience levels, from complete beginners to advanced players returning to their instrument. Each lesson is personalized to your goals, whether you're learning for enjoyment, creative expression, or professional development.</p>
@@ -324,7 +473,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="lessonsblurb">
         <p>I work closely with every student to build a solid musical foundation, strengthen technique, and nurture confidence. Lessons emphasize artistry, curiosity, and consistency, all within a supportive, encouraging environment.</p>
 
-        <p>For younger learners (ages 3–7), I recommend that a parent or caregiver participate during lessons to help with practice at home. I also assist families and new students in finding the right harp to rent or purchase.</p>
+        <p>For younger learners (ages 3&ndash;7), I recommend that a parent or caregiver participate during lessons to help with practice at home. I also assist families and new students in finding the right harp to rent or purchase.</p>
 
         <p><strong>Lesson details:</strong></p>
         <ul>
@@ -343,16 +492,299 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 </div>
-<div class="container">
-  <div class="row">
-    <div class="lessonsblurb">
-      <picture>
-        <source srcset="images/lessons/group-harp-class-brooklyn.webp" type="image/webp">
-        <img src="images/lessons/group-harp-class-brooklyn.jpg" alt="Group harp class in Brooklyn - Children learning harp with Esther Sibiude" width="100%" loading="lazy">
-      </picture>
+  <!-- Contact Form Section (Moved here from bottom) -->
+  <div class="container">
+      <div id="CONTACT" style="margin-top: 40px;">
+        <div class="row align-items-center">
+          <div class="col-lg-7">
+            <div class="contact-info">
+              <h1 style="font-size: 1.8rem; font-weight: 600;">Contact</h1>
+              <div style="margin-left: 20px; margin-top: 20px;">
+                <h3>Ready to begin your harp journey?</h3>
+                <p>Fill out the form below or give me a call or text message! I'd love to hear from you and learn a bit about you.</p>
+
+                <!-- Contact Form -->
+                <form id="lesson-request-form" action="https://formspree.io/f/mrbpoaqr" method="POST" class="contact-form" onsubmit="trackFormSubmission();">
+                  <div class="form-group mb-3">
+                    <label for="name">Full Name</label>
+                    <input type="text" class="form-control" id="name" name="name" required>
+                  </div>
+
+                  <div class="form-group mb-3">
+                    <label for="email">Email Address</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                  </div>
+
+                  <div class="form-group mb-3">
+                    <label for="phone">Phone Number (optional)</label>
+                    <input type="tel" class="form-control" id="phone" name="phone">
+                  </div>
+
+                  <div class="form-group mb-3">
+                    <label for="age">Your Age (or your child's age)</label>
+                    <input type="text" class="form-control" id="age" name="age">
+                  </div>
+
+                  <div class="form-group mb-3">
+                    <label for="harp_experience">Do you have any harp experience?</label>
+                    <select class="form-control" id="harp_experience" name="harp_experience">
+                      <option value="No experience">No, I'm a complete beginner</option>
+                      <option value="Some experience">I have some experience</option>
+                      <option value="Experienced">I'm experienced</option>
+                    </select>
+                  </div>
+
+
+                  <div class="form-group mb-3">
+                    <label for="message">Additional Information</label>
+                    <textarea class="form-control" id="message" name="message" rows="4" placeholder="Tell me about your musical background, interests, or any questions you have..."></textarea>
+                  </div>
+
+                  <!-- Hidden fields -->
+                  <input type="hidden" id="gclid_field" name="gclid" value="">
+                  <input type="hidden" name="_subject" value="New Harp Lesson Request">
+
+                  <button type="submit" class="btn btn-primary submit-btn">Request Lesson Information</button>
+                </form>
+
+                <div class="or-divider">
+                  <hr><span>OR</span><hr>
+                </div>
+
+                <p>Contact me directly:</p>
+
+                <div class="contact-methods">
+                  <div class="contact-method">
+                    <i class="bi bi-envelope-fill"></i>
+                    <a href="mailto:harplessonsbyesther@gmail.com?subject=Interested in Harp Lessons&body=Hi Esther,%0A%0AI'm interested in harp lessons. Here is a bit about myself:" class="contact-button">
+                      Email me at harplessonsbyesther@gmail.com
+                    </a>
+                  </div>
+
+                  <div class="contact-method">
+                    <i class="bi bi-telephone-fill"></i>
+                    <a href="tel:9174638958" class="contact-button">
+                      Call or text me at 917-463-8958
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-5">
+            <div class="contact-image-container">
+              <picture>
+                <source srcset="images/contact/harp-hands-close-up.webp" type="image/webp">
+                <img src="images/contact/harp-hands-close-up.png" alt="Harp playing technique - Close-up hands on harp strings" class="contact-image" loading="lazy">
+              </picture>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Add Bootstrap Icons -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+      <!-- Custom styles for Instagram icon -->
+      <style>
+        .nav-item .bi-instagram {
+          font-size: 1.2rem;
+          vertical-align: -0.15em;
+          position: relative;
+          top: -1px;
+        }
+        /* Add a subtle hover effect */
+        .nav-item .bi-instagram:hover {
+          color: #c13584; /* Instagram brand color */
+        }
+      </style>
+
+      <!-- Custom styles for contact section -->
+      <style>
+        .contact-info {
+          padding: 20px 0;
+        }
+        .contact-methods {
+          margin-top: 30px;
+        }
+        .contact-method {
+          margin-bottom: 20px;
+          display: flex;
+          align-items: center;
+        }
+        .contact-method i {
+          font-size: 1.8rem;
+          margin-right: 20px;
+          color: #737360;
+        }
+        .contact-button {
+          display: inline-block;
+          color: #585c53;
+          font-weight: 500;
+          font-size: 1.1rem;
+          text-decoration: none;
+          transition: color 0.2s;
+          border-bottom: 1px solid transparent;
+          padding-bottom: 2px;
+        }
+        .contact-button:hover {
+          color: #85927c;
+          border-bottom: 1px solid #85927c;
+        }
+        .contact-image-container {
+          position: relative;
+          margin: 20px 0;
+          border-radius: 8px;
+          overflow: hidden;
+          box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .contact-image {
+          width: 100%;
+          display: block;
+        }
+
+        /* Desktop positioning */
+        @media (min-width: 992px) {
+          .contact-image-container {
+            margin-top: -85px;
+            margin-bottom: 0;
+            position: relative;
+            top: -35px;
+          }
+        }
+
+        /* Mobile positioning - prevent overlap with contact info */
+        @media (max-width: 991px) {
+          .contact-image-container {
+            margin-top: 50px;
+            position: static;
+          }
+          .contact-methods {
+            margin-bottom: 60px;
+          }
+        }
+        .contact-image-caption {
+          background-color: rgba(115, 115, 96, 0.8);
+          color: white;
+          padding: 10px 15px;
+          text-align: center;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 0;
+        }
+        .contact-image-caption p {
+          margin: 0;
+          font-size: 1.1rem;
+          font-style: italic;
+        }
+        /* Contact Form Styles */
+        .contact-form {
+          margin: 20px 0;
+          background-color: #f9f9f9;
+          padding: 25px;
+          border-radius: 8px;
+          border-left: 4px solid #737360;
+        }
+
+        /* Ensure contact methods are visible and not overlapped on mobile */
+        @media (max-width: 991px) {
+          .contact-methods {
+            margin-bottom: 40px;
+          }
+        }
+        .form-group label {
+          font-weight: 500;
+          margin-bottom: 5px;
+          color: #585c53;
+        }
+        .form-control {
+          border: 1px solid #ddd;
+          padding: 10px 15px;
+          border-radius: 4px;
+          color: #585c53;
+        }
+        .form-control:focus {
+          border-color: #737360;
+          box-shadow: 0 0 0 0.2rem rgba(115, 115, 96, 0.25);
+        }
+        .submit-btn {
+          background-color: #737360;
+          border: none;
+          padding: 10px 20px;
+          font-weight: 500;
+          width: 100%;
+          margin-top: 10px;
+        }
+        .submit-btn:hover {
+          background-color: #85927c;
+        }
+        .or-divider {
+          display: flex;
+          align-items: center;
+          margin: 30px 0;
+          color: #737360;
+        }
+        .or-divider hr {
+          flex-grow: 1;
+          border-top: 1px solid #ddd;
+          margin: 0 15px;
+        }
+        .or-divider span {
+          font-weight: 500;
+          color: #737360;
+        }
+      </style>
+
+      <!-- Google Ads GCLID Tracking Script -->
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          // Function to get URL parameters
+          function getParameterByName(name) {
+            name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+            var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+                results = regex.exec(location.search);
+            return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+          }
+
+          // Get GCLID and store it in the form
+          var gclid = getParameterByName('gclid');
+          if (gclid) {
+            document.getElementById('gclid_field').value = gclid;
+
+            // Also store in a cookie for future use (lasts 30 days)
+            var expiryDate = new Date();
+            expiryDate.setDate(expiryDate.getDate() + 30);
+            document.cookie = `gclid=${gclid}; expires=${expiryDate.toUTCString()}; path=/`;
+          } else {
+            // Try to get from cookie if not in URL
+            var cookies = document.cookie.split(';');
+            for (var i = 0; i < cookies.length; i++) {
+              var cookie = cookies[i].trim();
+              if (cookie.indexOf('gclid=') === 0) {
+                document.getElementById('gclid_field').value = cookie.substring('gclid='.length, cookie.length);
+                break;
+              }
+            }
+          }
+        });
+      </script>
+  </div>
+  <!-- End Contact Form Section -->
+
+  <!-- Group Harp Class Image -->
+  <div class="container">
+    <div class="row">
+      <div class="lessonsblurb" style="text-align: center;">
+        <picture>
+          <source srcset="images/lessons/group-harp-class-brooklyn.webp" type="image/webp">
+          <img src="images/lessons/group-harp-class-brooklyn.jpg" alt="Group harp class in Brooklyn - Children learning harp with Esther Sibiude" width="75%" loading="lazy" style="display: inline-block;">
+        </picture>
+      </div>
     </div>
   </div>
-</div>
+
   <div class="container">
     <div id="ABOUT" class="lessons">
       <h1 style="font-size: 1.8rem; font-weight: 600;">
@@ -383,7 +815,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <summary style="cursor: pointer; font-size: 1.8rem; font-weight: 600; color: #585c53; padding: 15px 0; list-style: none; display: flex; align-items: center; gap: 15px;">
         <span>Projects</span>
         <span class="toggle-indicator" style="display: flex; align-items: center; gap: 8px;">
-          <span class="toggle-arrow" style="font-size: 1rem; transition: transform 0.3s;">▶</span>
+          <span class="toggle-arrow" style="font-size: 1rem; transition: transform 0.3s;">&#9654;</span>
           <span class="expand-text" style="font-size: 0.75rem; font-style: italic; font-weight: 400; position: relative; top: 4px;">Click to expand</span>
         </span>
       </summary>
@@ -462,7 +894,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           
           <h3>Where do the lessons take place?</h3>
           <p>You have three options:</p>
-          <li>At my home in Park Slope</li>
+          <li>At my home in Park Slope, Brooklyn</li>
           <li>At your home (if you live in New York)</li>
           <li>Online via Zoom</li>
           <br>
@@ -493,285 +925,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
  
   
     </div>
-    <div class="container">
-      <div id="CONTACT" style="margin-top: 40px;">
-        <div class="row align-items-center">
-          <div class="col-lg-7">
-            <div class="contact-info">
-              <h1 style="font-size: 1.8rem; font-weight: 600;">Contact</h1>
-              <div style="margin-left: 20px; margin-top: 20px;">
-                <h3>Ready to begin your harp journey?</h3>
-                <p>Fill out the form below or give me a call or text message! I'd love to hear from you and learn a bit about you.</p>
-                
-                <!-- Contact Form -->
-                <form id="lesson-request-form" action="https://formspree.io/f/mrbpoaqr" method="POST" class="contact-form" onsubmit="trackFormSubmission();">
-                  <div class="form-group mb-3">
-                    <label for="name">Full Name</label>
-                    <input type="text" class="form-control" id="name" name="name" required>
-                  </div>
-                  
-                  <div class="form-group mb-3">
-                    <label for="email">Email Address</label>
-                    <input type="email" class="form-control" id="email" name="email" required>
-                  </div>
-                  
-                  <div class="form-group mb-3">
-                    <label for="phone">Phone Number (optional)</label>
-                    <input type="tel" class="form-control" id="phone" name="phone">
-                  </div>
-                  
-                  <div class="form-group mb-3">
-                    <label for="age">Your Age (or your child's age)</label>
-                    <input type="text" class="form-control" id="age" name="age">
-                  </div>
-                  
-                  <div class="form-group mb-3">
-                    <label for="harp_experience">Do you have any harp experience?</label>
-                    <select class="form-control" id="harp_experience" name="harp_experience">
-                      <option value="No experience">No, I'm a complete beginner</option>
-                      <option value="Some experience">I have some experience</option>
-                      <option value="Experienced">I'm experienced</option>
-                    </select>
-                  </div>
-                  
-                  
-                  <div class="form-group mb-3">
-                    <label for="message">Additional Information</label>
-                    <textarea class="form-control" id="message" name="message" rows="4" placeholder="Tell me about your musical background, interests, or any questions you have..."></textarea>
-                  </div>
-                  
-                  <!-- Hidden fields -->
-                  <input type="hidden" id="gclid_field" name="gclid" value="">
-                  <input type="hidden" name="_subject" value="New Harp Lesson Request">
-                  
-                  <button type="submit" class="btn btn-primary submit-btn">Request Lesson Information</button>
-                </form>
-                
-                <div class="or-divider">
-                  <hr><span>OR</span><hr>
-                </div>
-                
-                <p>Contact me directly:</p>
-                
-                <div class="contact-methods">
-                  <div class="contact-method">
-                    <i class="bi bi-envelope-fill"></i>
-                    <a href="mailto:harplessonsbyesther@gmail.com?subject=Interested in Harp Lessons&body=Hi Esther,%0A%0AI'm interested in harp lessons. Here is a bit about myself:" class="contact-button">
-                      Email me at harplessonsbyesther@gmail.com
-                    </a>
-                  </div>
-                  
-                  <div class="contact-method">
-                    <i class="bi bi-telephone-fill"></i>
-                    <a href="tel:9174638958" class="contact-button">
-                      Call or text me at 917-463-8958
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-5">
-            <div class="contact-image-container">
-              <picture>
-                <source srcset="images/contact/harp-hands-close-up.webp" type="image/webp">
-                <img src="images/contact/harp-hands-close-up.png" alt="Harp playing technique - Close-up hands on harp strings" class="contact-image" loading="lazy">
-              </picture>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      <!-- Add Bootstrap Icons -->
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
-      
-      <!-- Custom styles for Instagram icon -->
-      <style>
-        .nav-item .bi-instagram {
-          font-size: 1.2rem;
-          vertical-align: -0.15em;
-          position: relative;
-          top: -1px;
-        }
-        /* Add a subtle hover effect */
-        .nav-item .bi-instagram:hover {
-          color: #c13584; /* Instagram brand color */
-        }
-      </style>
-      
-      <!-- Custom styles for contact section -->
-      <style>
-        .contact-info {
-          padding: 20px 0;
-        }
-        .contact-methods {
-          margin-top: 30px;
-        }
-        .contact-method {
-          margin-bottom: 20px;
-          display: flex;
-          align-items: center;
-        }
-        .contact-method i {
-          font-size: 1.8rem;
-          margin-right: 20px;
-          color: #737360;
-        }
-        .contact-button {
-          display: inline-block;
-          color: #585c53;
-          font-weight: 500;
-          font-size: 1.1rem;
-          text-decoration: none;
-          transition: color 0.2s;
-          border-bottom: 1px solid transparent;
-          padding-bottom: 2px;
-        }
-        .contact-button:hover {
-          color: #85927c;
-          border-bottom: 1px solid #85927c;
-        }
-        .contact-image-container {
-          position: relative;
-          margin: 20px 0;
-          border-radius: 8px;
-          overflow: hidden;
-          box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        }
-        .contact-image {
-          width: 100%;
-          display: block;
-        }
-        
-        /* Desktop positioning */
-        @media (min-width: 992px) {
-          .contact-image-container {
-            margin-top: -85px;
-            margin-bottom: 0;
-            position: relative;
-            top: -35px;
-          }
-        }
-        
-        /* Mobile positioning - prevent overlap with contact info */
-        @media (max-width: 991px) {
-          .contact-image-container {
-            margin-top: 50px; /* Increased top margin */
-            position: static;
-          }
-          .contact-methods {
-            margin-bottom: 60px; /* Add extra space below contact methods on mobile */
-          }
-        }
-        .contact-image-caption {
-          background-color: rgba(115, 115, 96, 0.8);
-          color: white;
-          padding: 10px 15px;
-          text-align: center;
-          position: absolute;
-          bottom: 0;
-          left: 0;
-          right: 0;
-        }
-        .contact-image-caption p {
-          margin: 0;
-          font-size: 1.1rem;
-          font-style: italic;
-        }
-        /* Contact Form Styles */
-        .contact-form {
-          margin: 20px 0;
-          background-color: #f9f9f9;
-          padding: 25px;
-          border-radius: 8px;
-          border-left: 4px solid #737360;
-        }
-        
-        /* Ensure contact methods are visible and not overlapped on mobile */
-        @media (max-width: 991px) {
-          .contact-methods {
-            margin-bottom: 40px; /* Add extra space below contact methods on mobile */
-          }
-        }
-        .form-group label {
-          font-weight: 500;
-          margin-bottom: 5px;
-          color: #585c53;
-        }
-        .form-control {
-          border: 1px solid #ddd;
-          padding: 10px 15px;
-          border-radius: 4px;
-          color: #585c53;
-        }
-        .form-control:focus {
-          border-color: #737360;
-          box-shadow: 0 0 0 0.2rem rgba(115, 115, 96, 0.25);
-        }
-        .submit-btn {
-          background-color: #737360;
-          border: none;
-          padding: 10px 20px;
-          font-weight: 500;
-          width: 100%;
-          margin-top: 10px;
-        }
-        .submit-btn:hover {
-          background-color: #85927c;
-        }
-        .or-divider {
-          display: flex;
-          align-items: center;
-          margin: 30px 0;
-          color: #737360;
-        }
-        .or-divider hr {
-          flex-grow: 1;
-          border-top: 1px solid #ddd;
-          margin: 0 15px;
-        }
-        .or-divider span {
-          font-weight: 500;
-          color: #737360;
-        }
-      </style>
-      
-      <!-- Google Ads GCLID Tracking Script -->
-      <script>
-        document.addEventListener('DOMContentLoaded', function() {
-          // Function to get URL parameters
-          function getParameterByName(name) {
-            name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
-            var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
-                results = regex.exec(location.search);
-            return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
-          }
-          
-          // Get GCLID and store it in the form
-          var gclid = getParameterByName('gclid');
-          if (gclid) {
-            document.getElementById('gclid_field').value = gclid;
-            
-            // Also store in a cookie for future use (lasts 30 days)
-            var expiryDate = new Date();
-            expiryDate.setDate(expiryDate.getDate() + 30);
-            document.cookie = `gclid=${gclid}; expires=${expiryDate.toUTCString()}; path=/`;
-          } else {
-            // Try to get from cookie if not in URL
-            var cookies = document.cookie.split(';');
-            for (var i = 0; i < cookies.length; i++) {
-              var cookie = cookies[i].trim();
-              if (cookie.indexOf('gclid=') === 0) {
-                document.getElementById('gclid_field').value = cookie.substring('gclid='.length, cookie.length);
-                break;
-              }
-            }
-          }
-        });
-      </script>
-  </div>
-</div>
 <div class="container">
   <div class="footer" style="text-align: center; padding: 30px 0; border-top: 1px solid #ddd; margin-top: 60px;">
     <img src="images/branding/esther-sibiude-harp-signature.jpg" alt="Esther Sibiude Harpist NYC" width="75px" loading="lazy">
@@ -779,8 +932,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div style="margin-top: 20px; color: #585c53;">
       <p style="font-weight: 600; font-size: 1.1rem; margin-bottom: 10px;">Harp Lessons by Esther Sibiude</p>
       <p style="margin: 5px 0;">Brooklyn, NY</p>
-      <p style="margin: 5px 0;">📞 <a href="tel:9174638958" style="color: #585c53; text-decoration: none;">917-463-8958</a></p>
-      <p style="margin: 5px 0;">✉️ <a href="mailto:harplessonsbyesther@gmail.com" style="color: #585c53; text-decoration: none;">harplessonsbyesther@gmail.com</a></p>
+      <p style="margin: 5px 0;">&#128222; <a href="tel:9174638958" style="color: #585c53; text-decoration: none;">917-463-8958</a></p>
+      <p style="margin: 5px 0;">&#9993; <a href="mailto:harplessonsbyesther@gmail.com" style="color: #585c53; text-decoration: none;">harplessonsbyesther@gmail.com</a></p>
     </div>
 
     <div style="margin-top: 15px; padding-top: 15px; border-top: 1px solid #eee;">
