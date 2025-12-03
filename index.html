@@ -10,6 +10,35 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GT-T9CD235D');</script>
 <!-- End Google Tag Manager -->
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '770878310335430');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=770878310335430&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+(function(c,l,a,r,i,t,y){
+c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+})(window, document, "clarity", "script", "ov9nsp1i4h");
+</script>
+<!-- End Microsoft Clarity -->
+
 <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/harp6464.png">
 <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/harp6464.png">
 <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/harp6464.png">
@@ -475,7 +504,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <p>Fill out the form below or give me a call or text message! I'd love to hear from you and learn a bit about you.</p>
                 
                 <!-- Contact Form -->
-                <form id="lesson-request-form" action="https://formspree.io/f/mrbpoaqr" method="POST" class="contact-form" onsubmit="gtag('event', 'conversion', {'send_to': 'AW-16923342394/ZBRgCOeh6KkaELrs1oU_'});">
+                <form id="lesson-request-form" action="https://formspree.io/f/mrbpoaqr" method="POST" class="contact-form" onsubmit="trackFormSubmission();">
                   <div class="form-group mb-3">
                     <label for="name">Full Name</label>
                     <input type="text" class="form-control" id="name" name="name" required>
@@ -777,6 +806,53 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <!-- Load hash navigation script -->
 <script src="hash-navigation.js"></script>
+
+<!-- Analytics Configuration -->
+<script src="analytics-config.js"></script>
+
+<!-- UTM Capture Script -->
+<script src="utm-capture.js"></script>
+
+<!-- Form Submission Tracking -->
+<script>
+/**
+ * Tracks form submission across all analytics platforms
+ */
+function trackFormSubmission() {
+  try {
+    // 1. Google Ads Conversion
+    if (typeof gtag !== 'undefined') {
+      gtag('event', 'conversion', {
+        'send_to': 'AW-16923342394/ZBRgCOeh6KkaELrs1oU_'
+      });
+    }
+
+    // 2. GA4 Event
+    if (typeof gtag !== 'undefined') {
+      gtag('event', 'submit_contact_form', {
+        'event_category': 'Lead Generation',
+        'event_label': 'Lesson Request Form',
+        'value': 1
+      });
+    }
+
+    // 3. Meta Pixel Lead Event
+    if (typeof fbq !== 'undefined') {
+      fbq('track', 'Lead', {
+        content_name: 'Harp Lesson Request',
+        content_category: 'Lesson Inquiry'
+      });
+    }
+
+    console.log('✓ Form submission tracked across all platforms');
+  } catch (error) {
+    console.error('Error tracking form submission:', error);
+  }
+
+  // Return true to allow form submission to proceed
+  return true;
+}
+</script>
 
 <!-- Google tag (gtag.js) for Google Ads Conversion Tracking -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16923342394"></script>
