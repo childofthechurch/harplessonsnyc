@@ -66,18 +66,39 @@ document.addEventListener('DOMContentLoaded', function() {
   document.querySelectorAll('a[href^="#"]').forEach(link => {
     link.addEventListener('click', function(e) {
       if (this.getAttribute('href') === '#') return; // Skip empty hash
-      
+
       e.preventDefault(); // Prevent default anchor behavior
-      
+
       // Get the target ID without the # character
       const targetId = this.getAttribute('href').substring(1);
-      
+
+      // Track the navigation event in analytics
+      try {
+        // Google Analytics 4
+        if (typeof gtag !== 'undefined') {
+          gtag('event', 'scroll_to_section', {
+            'event_category': 'Navigation',
+            'event_label': targetId,
+            'target_section': targetId
+          });
+        }
+
+        // Meta Pixel
+        if (typeof fbq !== 'undefined') {
+          fbq('trackCustom', 'ScrollToSection', {
+            section: targetId
+          });
+        }
+      } catch (error) {
+        console.error('Error tracking navigation:', error);
+      }
+
       // Update the URL without reloading the page
       history.pushState(null, null, `#${targetId}`);
-      
+
       // Scroll to the element
       scrollToElement(targetId);
-      
+
       // Close mobile navbar if open
       const navbarCollapse = document.querySelector('.navbar-collapse');
       if (navbarCollapse && navbarCollapse.classList.contains('show')) {
