@@ -347,10 +347,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </h1>
 
     <p class="hero-subheadline" style="font-size: 1.25rem; color: #737360; margin-bottom: 40px; max-width: 700px; margin-left: auto; margin-right: auto; line-height: 1.2;">
-      Learn the harp in a warm, encouraging environment.<br>
-      Private lessons for adults, teens, and children &mdash;<br>
-      no experience or harp required to begin.
+      <span class="hero-subheadline-desktop" style="display: none;">
+        Learn the harp in a warm, encouraging environment.<br>
+        Private lessons for adults, teens, and children.
+      </span>
+      <span class="hero-subheadline-mobile" style="display: block;">
+        Learn the harp in a warm, encouraging environment. Private lessons for adults, teens, and children.
+      </span>
     </p>
+    <style>
+      @media (min-width: 768px) {
+        .hero-subheadline-desktop {
+          display: block !important;
+        }
+        .hero-subheadline-mobile {
+          display: none !important;
+        }
+      }
+    </style>
 
     <!-- Trust Bullets -->
     <style>
@@ -365,7 +379,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="col-md-6 mb-3">
           <div style="display: flex; align-items: center; text-align: left;">
             <span style="color: #737360; font-size: 1.5rem; margin-right: 15px; line-height: 1;">&#127925;</span>
-            <p style="margin: 0; color: #585c53; font-size: 1.05rem;">Friendly, professional instruction from<br>Esther Sibiude, classically and jazz trained harpist</p>
+            <p style="margin: 0; color: #585c53; font-size: 1.05rem;">Friendly, professional instruction from Esther Sibiude, classically and jazz trained harpist</p>
           </div>
         </div>
         <div class="col-md-6 mb-3">
