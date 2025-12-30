@@ -218,8 +218,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      
-      <a href="#CONTACT" class="d-lg-none book-lesson-btn ms-auto btn btn-outline-secondary">Book Lesson!</a>
+
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <div class="navbar-nav">
           <a class="nav-item nav-link" href="#">Home </a>
@@ -229,7 +228,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <a class="nav-item nav-link" href="#CONTACT">Contact</a>
           <a class="nav-item nav-link" href="https://www.instagram.com/school_of_harpiness/" target="_blank" title="Instagram"><i class="bi bi-instagram"></i></a>
         </div>
-        
+      </div>
+
+      <a href="#CONTACT" class="book-lesson-btn ms-auto btn btn-outline-secondary">Book Lesson!</a>
   </nav>
 
       
@@ -480,14 +481,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <h1 style="font-size: 1.8rem; font-weight: 600;">
       Lessons
     </h1>
-    <div class="lessonsblurb">
-      <p>Private harp lessons are open to students of all ages and experience levels, from complete beginners to advanced players returning to their instrument. Each lesson is personalized to your goals, whether you're learning for enjoyment, creative expression, or professional development.</p>
-    </div>
-  </div>
-
-</div>
-
-</div>
+    
 <div class="container">
   <div class="row">
     <div class="col-lg">
@@ -665,6 +659,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           display: block;
         }
 
+        /* Responsive image styling for consistent widths */
+        .responsive-image {
+          width: 75%;
+          height: auto;
+        }
+
+        @media (max-width: 991px) {
+          .responsive-image {
+            width: 100%;
+          }
+        }
+
         /* Desktop positioning */
         @media (min-width: 992px) {
           .contact-image-container {
@@ -800,7 +806,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="lessonsblurb" style="text-align: center;">
         <picture>
           <source srcset="images/lessons/group-harp-class-brooklyn.webp" type="image/webp">
-          <img src="images/lessons/group-harp-class-brooklyn.jpg" alt="Group harp class in Brooklyn - Children learning harp with Esther Sibiude" width="75%" loading="lazy" style="display: inline-block;">
+          <img src="images/lessons/group-harp-class-brooklyn.jpg" alt="Group harp class in Brooklyn - Children learning harp with Esther Sibiude" class="responsive-image" loading="lazy" style="display: inline-block;">
         </picture>
       </div>
     </div>
@@ -816,7 +822,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="row">
           <div class="col-lg">
             <div class="lessonsblurb">
-              <img src="images/teacher/esther-sibiude-professional-harpist.jpg" alt="Esther Sibiude - Professional Harpist and Music Teacher" width="90%" loading="lazy">
+              <img src="images/teacher/esther-sibiude-professional-harpist.jpg" alt="Esther Sibiude - Professional Harpist and Music Teacher" class="responsive-image" loading="lazy">
       </div>
       </div>
     <div class="col-lg">
