@@ -57,7 +57,7 @@ export default function Hero() {
       >
         <motion.h1
           variants={itemVariants}
-          className="font-serif text-5xl md:text-7xl lg:text-8xl font-light mb-6 leading-tight"
+          className="font-serif text-3xl sm:text-5xl md:text-7xl lg:text-8xl font-light mb-3 sm:mb-6 leading-tight"
           style={{ textShadow: '0 4px 20px rgba(0, 0, 0, 0.8), 0 2px 8px rgba(0, 0, 0, 0.6)' }}
         >
           Harp Lessons NYC
@@ -65,12 +65,12 @@ export default function Hero() {
 
         <motion.div
           variants={itemVariants}
-          className="w-20 h-[2px] bg-white/60 mx-auto mb-8"
+          className="w-16 sm:w-20 h-[2px] bg-white/60 mx-auto mb-4 sm:mb-8"
         />
 
         <motion.p
           variants={itemVariants}
-          className="text-xl md:text-2xl lg:text-3xl font-medium mb-4 max-w-3xl mx-auto leading-relaxed"
+          className="text-base sm:text-xl md:text-2xl lg:text-3xl font-medium mb-2 sm:mb-4 max-w-3xl mx-auto leading-tight sm:leading-relaxed"
           style={{ textShadow: '0 4px 16px rgba(0, 0, 0, 0.9), 0 2px 8px rgba(0, 0, 0, 0.8)' }}
         >
           Private Instruction with Esther Sibiude
@@ -78,7 +78,7 @@ export default function Hero() {
 
         <motion.p
           variants={itemVariants}
-          className="text-lg md:text-xl font-medium mb-12 max-w-2xl mx-auto text-white"
+          className="text-sm sm:text-lg md:text-xl font-medium mb-8 sm:mb-12 max-w-2xl mx-auto text-white"
           style={{ textShadow: '0 4px 16px rgba(0, 0, 0, 0.9), 0 2px 8px rgba(0, 0, 0, 0.8)' }}
         >
           Brooklyn, NYC • Now Enrolling • All Levels Welcome
@@ -86,14 +86,14 @@ export default function Hero() {
 
         <motion.div
           variants={itemVariants}
-          className="flex flex-col sm:flex-row gap-6 justify-center items-center"
+          className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center"
         >
           <motion.a
             href="#contact"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
-            className="px-10 py-4 bg-white text-primary font-medium text-lg uppercase tracking-wider hover:bg-white/90 transition-colors duration-300"
+            className="px-8 py-3 sm:px-10 sm:py-4 bg-white text-primary font-medium text-base sm:text-lg uppercase tracking-wider hover:bg-white/90 transition-colors duration-300"
           >
             Book a First Lesson
           </motion.a>
@@ -103,7 +103,7 @@ export default function Hero() {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
-            className="px-10 py-4 border-2 border-white text-white font-medium text-lg uppercase tracking-wider hover:bg-white hover:text-primary transition-all duration-300"
+            className="px-8 py-3 sm:px-10 sm:py-4 border-2 border-white text-white font-medium text-base sm:text-lg uppercase tracking-wider hover:bg-white hover:text-primary transition-all duration-300"
           >
             Learn More
           </motion.a>
