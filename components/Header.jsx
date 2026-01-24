@@ -122,19 +122,19 @@ export default function Header() {
         <AnimatePresence>
           {isMobileMenuOpen && (
             <motion.div
-              initial={{ opacity: 0, height: 0 }}
-              animate={{ opacity: 1, height: 'auto' }}
-              exit={{ opacity: 0, height: 0 }}
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -20 }}
               transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
-              className="md:hidden overflow-hidden"
+              className="md:hidden absolute right-6 top-full mt-2 w-64 bg-white rounded-lg shadow-2xl border border-gray-100 overflow-hidden"
             >
-              <div className="flex flex-col space-y-4 py-6">
+              <div className="flex flex-col space-y-1 py-4 px-6">
                 {navLinks.map((link) => (
                   <a
                     key={link.href}
                     href={link.href}
                     onClick={() => setIsMobileMenuOpen(false)}
-                    className="text-primary-light hover:text-primary transition-colors text-sm uppercase tracking-wider"
+                    className="text-primary-light hover:text-primary hover:bg-gray-50 transition-all py-3 px-3 rounded text-sm uppercase tracking-wider"
                   >
                     {link.label}
                   </a>
@@ -142,7 +142,7 @@ export default function Header() {
                 <a
                   href="#contact"
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className="px-6 py-2 border-2 border-primary text-primary hover:bg-primary hover:text-white transition-all duration-300 text-sm uppercase tracking-wider text-center"
+                  className="mt-2 px-6 py-3 border-2 border-primary text-primary hover:bg-primary hover:text-white transition-all duration-300 text-sm uppercase tracking-wider text-center rounded"
                 >
                   Book a Lesson
                 </a>
