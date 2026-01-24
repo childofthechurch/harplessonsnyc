@@ -122,27 +122,28 @@ export default function Header() {
         <AnimatePresence>
           {isMobileMenuOpen && (
             <motion.div
-              initial={{ opacity: 0, y: -20 }}
+              initial={{ opacity: 0, y: -10 }}
               animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -20 }}
-              transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
-              className="md:hidden absolute right-6 top-full mt-2 w-64 bg-white rounded-lg shadow-2xl border border-gray-100 overflow-hidden"
+              exit={{ opacity: 0, y: -10 }}
+              transition={{ duration: 0.2, ease: [0.16, 1, 0.3, 1] }}
+              className="md:hidden absolute right-4 top-full mt-2 w-48 bg-white/95 backdrop-blur-sm rounded-md shadow-xl overflow-hidden"
             >
-              <div className="flex flex-col space-y-1 py-4 px-6">
+              <div className="flex flex-col py-2">
                 {navLinks.map((link) => (
                   <a
                     key={link.href}
                     href={link.href}
                     onClick={() => setIsMobileMenuOpen(false)}
-                    className="text-primary-light hover:text-primary hover:bg-gray-50 transition-all py-3 px-3 rounded text-sm uppercase tracking-wider"
+                    className="text-primary-light hover:text-primary hover:bg-primary/5 transition-colors py-2.5 px-4 text-xs uppercase tracking-wider font-medium"
                   >
                     {link.label}
                   </a>
                 ))}
+                <div className="border-t border-gray-100 my-1" />
                 <a
                   href="#contact"
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className="mt-2 px-6 py-3 border-2 border-primary text-primary hover:bg-primary hover:text-white transition-all duration-300 text-sm uppercase tracking-wider text-center rounded"
+                  className="mx-2 my-1 px-4 py-2 border border-primary text-primary hover:bg-primary hover:text-white transition-all duration-200 text-xs uppercase tracking-wider text-center rounded"
                 >
                   Book a Lesson
                 </a>
