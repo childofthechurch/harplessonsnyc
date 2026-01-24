@@ -126,7 +126,7 @@ export default function Header() {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -10 }}
               transition={{ duration: 0.2, ease: [0.16, 1, 0.3, 1] }}
-              className="md:hidden absolute right-4 top-full mt-2 w-48 bg-white/95 backdrop-blur-sm rounded-md shadow-xl overflow-hidden"
+              className="md:hidden absolute right-4 top-[70px] w-48 bg-white/95 backdrop-blur-sm rounded-md shadow-xl overflow-hidden"
             >
               <div className="flex flex-col py-2">
                 {navLinks.map((link) => (
