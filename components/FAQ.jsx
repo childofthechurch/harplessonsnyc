@@ -95,7 +95,7 @@ export default function FAQ() {
             initial={{ opacity: 0, x: -60 }}
             animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -60 }}
             transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-            className="sticky top-32"
+            className="lg:sticky lg:top-32"
           >
             <img
               src="/images/performances/harp-performance-st-peters-church-nyc.jpg"

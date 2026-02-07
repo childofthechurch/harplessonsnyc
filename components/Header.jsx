@@ -61,7 +61,7 @@ export default function Header() {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden lg:flex items-center space-x-6 xl:space-x-8">
             {navLinks.map((link, index) => (
               <motion.a
                 key={link.href}
@@ -73,7 +73,7 @@ export default function Header() {
                   delay: index * 0.1,
                   ease: [0.16, 1, 0.3, 1],
                 }}
-                className={`relative transition-colors duration-500 text-sm uppercase tracking-wider group ${
+                className={`relative transition-colors duration-500 text-sm uppercase tracking-wider group whitespace-nowrap ${
                   isScrolled
                     ? 'text-primary-light hover:text-primary'
                     : 'text-white/90 hover:text-white'
@@ -97,7 +97,7 @@ export default function Header() {
               }}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className={`px-6 py-2 border-2 transition-all duration-500 text-sm uppercase tracking-wider ${
+              className={`px-4 xl:px-6 py-2 border-2 transition-all duration-500 text-sm uppercase tracking-wider whitespace-nowrap ${
                 isScrolled
                   ? 'border-primary text-primary hover:bg-primary hover:text-white'
                   : 'border-white text-white hover:bg-white hover:text-primary'
@@ -110,7 +110,7 @@ export default function Header() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className={`md:hidden p-2 transition-colors duration-500 ${
+            className={`lg:hidden p-2 transition-colors duration-500 ${
               isScrolled ? 'text-primary' : 'text-white'
             }`}
           >
@@ -126,7 +126,7 @@ export default function Header() {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -10 }}
               transition={{ duration: 0.2, ease: [0.16, 1, 0.3, 1] }}
-              className="md:hidden absolute right-4 top-[70px] w-48 bg-white/95 backdrop-blur-sm rounded-md shadow-xl overflow-hidden"
+              className="lg:hidden absolute right-4 top-[70px] w-48 bg-white/50 backdrop-blur-md rounded-md shadow-xl overflow-hidden"
             >
               <div className="flex flex-col py-2">
                 {navLinks.map((link) => (
@@ -134,16 +134,16 @@ export default function Header() {
                     key={link.href}
                     href={link.href}
                     onClick={() => setIsMobileMenuOpen(false)}
-                    className="text-primary-light hover:text-primary hover:bg-primary/5 transition-colors py-2.5 px-4 text-xs uppercase tracking-wider font-medium"
+                    className="text-gray-900 hover:text-black hover:bg-gray-900/10 transition-colors py-2.5 px-4 text-xs uppercase tracking-wider font-medium text-center"
                   >
                     {link.label}
                   </a>
                 ))}
-                <div className="border-t border-gray-100 my-1" />
+                <div className="border-t border-gray-300 my-1" />
                 <a
                   href="#contact"
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className="mx-2 my-1 px-4 py-2 border border-primary text-primary hover:bg-primary hover:text-white transition-all duration-200 text-xs uppercase tracking-wider text-center rounded"
+                  className="mx-2 my-1 px-4 py-2 border-2 border-gray-900 text-gray-900 hover:bg-gray-900 hover:text-white transition-all duration-200 text-xs uppercase tracking-wider text-center rounded"
                 >
                   Book a Lesson
                 </a>
