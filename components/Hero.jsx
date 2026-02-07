@@ -44,7 +44,7 @@ export default function Hero() {
           transition={{ duration: 1.5, ease: [0.16, 1, 0.3, 1] }}
           src="/images/hero/esther-sibiude-harpist-nyc-hires.jpg"
           alt="Esther Sibiude - Professional Harpist"
-          className="w-full h-full object-cover object-top lg:object-[60%_0%]"
+          className="w-full h-full object-cover object-[center_20%] lg:object-[60%_18%]"
         />
       </div>
 
@@ -57,7 +57,7 @@ export default function Hero() {
       >
         <motion.h1
           variants={itemVariants}
-          className="font-serif text-3xl sm:text-5xl md:text-7xl lg:text-8xl font-light mb-3 sm:mb-6 leading-tight"
+          className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-light mb-3 sm:mb-6 leading-tight"
           style={{ textShadow: '0 4px 20px rgba(0, 0, 0, 0.8), 0 2px 8px rgba(0, 0, 0, 0.6)' }}
         >
           Harp Lessons NYC
@@ -70,16 +70,16 @@ export default function Hero() {
 
         <motion.p
           variants={itemVariants}
-          className="text-base sm:text-xl md:text-2xl lg:text-3xl font-light mb-3 sm:mb-5 max-w-3xl mx-auto lg:mx-0 leading-relaxed tracking-wide text-white/95"
-          style={{ textShadow: '0 4px 16px rgba(0, 0, 0, 0.9), 0 2px 8px rgba(0, 0, 0, 0.8)' }}
+          className="font-serif text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl font-normal mb-3 sm:mb-5 max-w-3xl mx-auto lg:mx-0 leading-relaxed tracking-wide"
+          style={{ textShadow: '0 6px 24px rgba(0, 0, 0, 1), 0 3px 12px rgba(0, 0, 0, 0.9), 0 2px 6px rgba(0, 0, 0, 0.8)' }}
         >
           Private Instruction with Esther Sibiude
         </motion.p>
 
         <motion.p
           variants={itemVariants}
-          className="text-sm sm:text-base md:text-lg lg:text-xl font-light mb-8 sm:mb-12 max-w-2xl mx-auto lg:mx-0 text-white/90 tracking-wider uppercase"
-          style={{ textShadow: '0 4px 16px rgba(0, 0, 0, 0.9), 0 2px 8px rgba(0, 0, 0, 0.8)' }}
+          className="font-serif text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl font-normal mb-8 sm:mb-12 max-w-2xl mx-auto lg:mx-0 tracking-wider uppercase"
+          style={{ textShadow: '0 6px 24px rgba(0, 0, 0, 1), 0 3px 12px rgba(0, 0, 0, 0.9), 0 2px 6px rgba(0, 0, 0, 0.8)' }}
         >
           Brooklyn, NYC • Now Enrolling • All Levels Welcome
         </motion.p>
