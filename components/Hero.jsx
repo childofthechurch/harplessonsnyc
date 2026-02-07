@@ -44,7 +44,7 @@ export default function Hero() {
           transition={{ duration: 1.5, ease: [0.16, 1, 0.3, 1] }}
           src="/images/hero/esther-sibiude-harpist-nyc-hires.jpg"
           alt="Esther Sibiude - Professional Harpist"
-          className="w-full h-full object-cover object-top"
+          className="w-full h-full object-cover object-top lg:object-[60%_0%]"
         />
       </div>
 
@@ -70,7 +70,7 @@ export default function Hero() {
 
         <motion.p
           variants={itemVariants}
-          className="text-base sm:text-xl md:text-2xl lg:text-3xl font-medium mb-2 sm:mb-4 max-w-3xl mx-auto lg:mx-0 leading-tight sm:leading-relaxed"
+          className="text-base sm:text-xl md:text-2xl lg:text-3xl font-light mb-3 sm:mb-5 max-w-3xl mx-auto lg:mx-0 leading-relaxed tracking-wide text-white/95"
           style={{ textShadow: '0 4px 16px rgba(0, 0, 0, 0.9), 0 2px 8px rgba(0, 0, 0, 0.8)' }}
         >
           Private Instruction with Esther Sibiude
@@ -78,7 +78,7 @@ export default function Hero() {
 
         <motion.p
           variants={itemVariants}
-          className="text-sm sm:text-lg md:text-xl font-medium mb-8 sm:mb-12 max-w-2xl mx-auto lg:mx-0 text-white"
+          className="text-sm sm:text-base md:text-lg lg:text-xl font-light mb-8 sm:mb-12 max-w-2xl mx-auto lg:mx-0 text-white/90 tracking-wider uppercase"
           style={{ textShadow: '0 4px 16px rgba(0, 0, 0, 0.9), 0 2px 8px rgba(0, 0, 0, 0.8)' }}
         >
           Brooklyn, NYC • Now Enrolling • All Levels Welcome
