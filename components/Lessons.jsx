@@ -13,13 +13,13 @@ export default function Lessons() {
     {
       icon: Clock,
       title: '30-Minute Lessons',
-      detail: '$70',
+      detail: '$80',
       description: 'Perfect for younger students',
     },
     {
       icon: Clock,
       title: '60-Minute Lessons',
-      detail: '$120',
+      detail: '$130',
       description: 'Comprehensive instruction',
     },
     {
